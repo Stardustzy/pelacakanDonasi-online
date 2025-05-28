@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pelacakan Donasi Bencana</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <h1>Dashboard Donasi Bencana</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="form.html">Isi Donasi</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Status Donasi</h2>
+      <table>
+        <thead>
+          <tr><th>Nama</th><th>Jumlah</th><th>Status</th></tr>
+        </thead>
+        <tbody id="donasi-list">
+          <!-- Donasi dinamis -->
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Lokasi Bencana</h2>
+      <div id="map"></div>
+    </section>
+  </main>
+
+  <footer>&copy; 2025 Aplikasi Donasi Bencana</footer>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

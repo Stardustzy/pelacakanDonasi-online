@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Form Donasi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Formulir Donasi</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="form.html">Isi Donasi</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="donasiForm">
+      <label>Nama Donatur:
+        <input type="text" id="nama" required />
+      </label>
+      <label>Jumlah Donasi (Rp):
+        <input type="number" id="jumlah" required />
+      </label>
+      <label>Tujuan Donasi:
+        <select id="tujuan">
+          <option value="Gempa Yogyakarta">Gempa Yogyakarta</option>
+          <option value="Banjir Sukoharjo">Banjir Sukoharjo</option>
+        </select>
+      </label>
+      <button type="submit">Kirim Donasi</button>
+    </form>
+    <p id="notif"></p>
+  </main>
+
+  <footer>&copy; 2025 Aplikasi Donasi Bencana</footer>
+  <script src="script.js"></script>
+</body>
+</html>
