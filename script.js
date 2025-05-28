@@ -1,10 +1,8 @@
-// Data dummy
 const donasi = [
   { nama: 'Amri', jumlah: 500000, status: 'Tersalurkan' },
   { nama: 'Budi', jumlah: 1000000, status: 'Dalam Perjalanan' }
 ];
 
-// Render data donasi ke tabel
 document.addEventListener("DOMContentLoaded", () => {
   const list = document.getElementById("donasi-list");
   if (list) {
@@ -15,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Leaflet Map
   const mapElement = document.getElementById("map");
   if (mapElement) {
     const map = L.map("map").setView([-7.565, 110.817], 8);
@@ -24,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
     L.marker([-7.801, 110.364]).addTo(map).bindPopup("Gempa Yogyakarta");
   }
 
-  // Donasi Form
   const form = document.getElementById("donasiForm");
   if (form) {
     form.addEventListener("submit", e => {
